@@ -19,21 +19,21 @@ export default function About() {
         "Congratulations on this incredible work! I’m excited to collaborate with you on future projects as well.",
       name: "Sano Beni",
       designation: "CTO at InnovateSphere",
-      src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      src: "/popo.jpg",
     },
     {
       quote:
         "You delivered on time and exceeded expectations. Congrats on such a smooth and successful project!",
       name: "Gisele",
       designation: "Operations Director at CloudScale",
-      src: "https://images.unsplash.com/photo-1623582854588-d60de57fa33f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      src: "/popo.jpg",
     },
     {
       quote:
         "Congratulations on an amazing job! The app is working perfectly, and I appreciate your dedication and expertise",
       name: "bkz Clement",
       designation: "CEO AT KATISHA",
-      src: "https://images.unsplash.com/photo-1636041293178-808a6762ab39?q=80&w=3464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      src: "/popo.jpg",
     },
   ];
 
@@ -54,7 +54,7 @@ export default function About() {
         </motion.h2>
         <div className="flex flex-col md:flex-row items-center justify-between">
           <motion.div
-            className="md:w-1/2 mb-8 md:mb-0 border-4 rounded-3xl border-blue-500  p-8 shadow-lg dark:border-blue-700 dark:shadow-blue-700"
+            className="md:w-1/2 mb-8 md:mb-0 border-4 rounded-3xl border-blue-500  p-8 shadow-lg dark:border-blue-700 dark:shadow-blue-700 dark:bg-black-500"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
