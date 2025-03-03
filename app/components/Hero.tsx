@@ -230,7 +230,7 @@ export default function Hero() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Learn More
+              About Me
               <ArrowDown className="w-4 h-4" />
             </motion.button>
             <motion.button
@@ -254,14 +254,14 @@ export default function Hero() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <div className="relative w-80 h-72 md:w-96 md:h-96 mx-auto ">
+            <div className="relative w-80 h-80 md:w-96 md:h-96 mx-auto ">
             
               <div className="relative inset-0 bg-gradient-to-r from-purple-400 to-blue-400 dark:from-purple-600 dark:to-blue-600 border-8 border-blue-700 transform  opacity-75 w-full h-full rounded-full overflow-hidden">
                 <Image
                   src="/dudu.jpg"
                   alt="duxforreally"
                   fill
-                  className="object-cover"
+                  className="object-cover w-full h-full rounded-full"
                   priority
                 />
               
