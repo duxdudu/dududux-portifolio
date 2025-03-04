@@ -177,7 +177,7 @@ export default function Hero() {
               stack) and mobile app development using React Native, ensuring
               seamless, high-performance experiences for users."
             </p>
-            <div className="flex lg:hidden justify-center lg:justify-start space-x-4 mb-8">
+            <div className=" flex lg:hidden justify-center lg:justify-start space-x-4 mb-8">
               <a
                 href="https://github.com/duxdudu"
                 className="p-3 rounded-full bg-white/80 hover:bg-white dark:bg-gray-800/80 dark:hover:bg-gray-800 transition-colors duration-300 shadow-lg hover:shadow-xl"
