@@ -16,8 +16,10 @@ const sections = [
 
 export default function FloatingNav() {
   const [activeSection, setActiveSection] = useState("hero")
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -36,6 +38,8 @@ export default function FloatingNav() {
 
     return () => observer.disconnect()
   }, [])
+
+  if (!mounted) return null;
 
   return (
     <motion.div

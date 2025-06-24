@@ -7,8 +7,10 @@ import Image from "next/image"
 
 export function   FloatingPaper({ count = 5 }) {
   const [dimensions, setDimensions] = useState({ width: 1200, height: 800 })
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
     // Update dimensions only on client side
     setDimensions({
       width: window.innerWidth,
@@ -25,6 +27,8 @@ export function   FloatingPaper({ count = 5 }) {
     window.addEventListener("resize", handleResize)
     return () => window.removeEventListener("resize", handleResize)
   }, [])
+
+  if (!mounted) return null;
 
   return (
     <div className="relative w-full h-full">

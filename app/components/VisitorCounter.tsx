@@ -34,6 +34,11 @@ export default function VisitorCounter() {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const componentRef = React.useRef<HTMLDivElement>(null);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     const storedUserInfo = localStorage.getItem('userInfo');
@@ -177,6 +182,8 @@ export default function VisitorCounter() {
       }
     }
   };
+
+  if (!mounted) return null;
 
   return (
     <motion.div
